@@ -1,0 +1,667 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+
+}
+nav{
+display: flex;
+justify-content: center;
+align-items: center;
+position: sticky;
+top:0;
+background-color:blue;
+
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	float: right;
+	margin: 20px 0px;
+
+
+}
+html{
+	scroll-behavior: smooth;
+}
+.logo{
+	color: black;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0px 100px;
+	font-weight: bold;
+	font-family:  'Style Script', cursive;
+	display: inline;
+
+	}
+nav ul li {
+	font-family: 'Style Script', cursive;
+	font-size: 1.1rem;
+	font-weight: bold;
+
+	
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 8px 25px;
+	transition: all .5s ease;
+}
+nav ul li a:hover{
+	background-color:blue;
+	color: black;
+	box-shadow: 0 0 10px white;
+
+}
+/*home section*/
+	#home{
+	width: 100%;
+	height: 100vh;
+	background-image: url(b1.png),url(bg1.jpeg);
+	background-repeat: no-repeat,no-repeat;
+	position: relative;
+	background-size: 50%,100%,cover;
+    background-position: right,center;
+     z-index: -1;
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+
+
+}
+
+.main{
+	font-family:'Oswald',sans-serif;
+	width: 500px;
+	position: absolute;
+	left: 20%;
+	top: 60%;
+	transform: translate(-20%,-60%);
+
+}
+.main p,
+.main .details{
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+}
+.main h1{
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	margin: 0px;
+	letter-spacing: 2px;
+	color:green;
+}
+.main h2{
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
+	margin: 0px;
+	letter-spacing: 3px;
+	color: lightgreen;
+
+}
+/* portfolio section*/
+#portfolio{
+	width: 100%;
+	box-sizing: border-box;
+	font-family: 'Lobster', cursive;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 50px 2% 20px 2%; 
+    
+
+}
+.p-heading{
+			font-family: 'Lobster', cursive;
+			font-size: 1.7rem;
+			text-align: center;
+			color: #FFFFFF;
+			font-weight: 400;
+			padding: 10px 20px;
+			background-color: black;
+			letter-spacing: 2px;
+			border-radius: 3px;
+			box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+
+
+}
+
+.p-box{
+background-color:white;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 2px 2px 14px rgba(0,0,0,0.3);
+	position: relative;
+}
+.p-b-container{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+
+
+}
+.text-overlay{
+	font-family: 'Lobster', cursive;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(23,209,172,0.89);
+
+}
+.text-overlay h1 {
+	color: #FFFFFF;
+
+}
+.text-overlay h1 {
+	font-size: 1.3rem;
+	margin:0px;
+	padding: 0px;
+	letter-spacing: 3px;
+}
+
+.p-box:hover .text-overlay{
+	display: flex;
+}
+.p-box img{
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+}
+/*cv section*/
+#cv{
+	width: 100%;
+	box-sizing: border-box;
+	font-family: 'Lobster', cursive;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 50px 2% 20px 2%; 
+     background-color:lightblue;
+    
+
+}
+.cv-heading{
+			font-family: 'Lobster', cursive;
+			font-size: 1.7rem;
+			text-align: center;
+			color:#FF9F55 ;
+			font-weight: 400;
+			padding: 10px 20px;
+			background-color: black;
+			letter-spacing: 2px;
+			border-radius: 3px;
+			box-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color:lightyellow;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    background-color: black;
+    width: 50%;
+}
+
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+.left {
+    left: 0;
+}
+
+
+.right {
+    left: 60%;
+}
+
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 24px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent transparent transparent purple;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: -1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color:pink;
+    position: relative;
+    border-radius: 6px;
+}
+/*contact section*/
+#contact-form{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: pink;
+	padding: 20px;
+	box-sizing: border-box;
+	color: white
+}
+
+.form{
+	display:flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	margin: 40px 0px;
+}
+
+.input{
+	padding: 20px;
+	margin: 20px;
+	width: 80%;
+	height: 20px;
+	border: none;
+	outline: none;
+}
+#message{
+	width: 100%;
+	height: 80px;
+	padding: 10px;
+	margin: 15px;
+	border: none;
+	outline: none;
+}		
+#send{
+	padding: 10px;
+	width: 30%;
+	margin: 40px;
+	border: none;
+	outline: none;
+}
+#send:hover{
+	cursor: pointer;
+	box-shadow: 0 0 10px white;
+}
+/* report section*/
+.p-headings{
+			font-family: 'Lobster', cursive;
+			font-size: 1.8rem;
+			text-align: center;
+			color: #FFFFFF;
+			font-weight:500;
+			padding: 20px 30px;
+			background-color:green;
+			letter-spacing: 2px;
+			border-radius: 3px;
+			box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+			
+
+}
+#site-report{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: pink;
+	padding: 20px;
+	box-sizing: border-box;
+	color: black;
+}
+
+
+.row{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+
+	
+
+}
+.box{
+	display: flex;
+	flex-direction:column;
+	width: 350px;
+	height: 450px;
+	border: 1px solid black;
+	margin: 10px;
+	align-items: center;
+	text-align: justify;
+	padding: 20px;
+	border-radius: 15px;
+	background: linear-gradient(to top,rgb(255,45,45) 50%, white 50%);
+	background-size: 100% 200%;
+	transition: all .8s;
+	
+
+}
+.box:hover{
+	background-position: left bottom;
+	color: white;
+	border: none;
+	box-shadow: 0 0 20px rgb(255,45,45);
+}
+#image{
+	display: flex;
+	flex-direction: column;
+}
+#image img{
+	width: 550px;
+	height: 400px;
+}
+#describe{
+	display: flex;
+	flex-direction: column;
+	text-align:justify;
+	padding:10px;
+}
+#describe h2{
+	font-size: 2rem;
+	margin-bottom:20px;
+
+}
+
+.gallery{
+  display:flex;
+  flex-direction: column;
+
+}
+.gallery img{
+	width: 500px;
+	height:500px;
+}
+.checkbtn{
+	color: black;
+	font-size: 25px;
+	cursor: pointer;
+	float: right;
+	margin-right: 40px;
+	line-height: 100px;
+	display: none;
+}
+#check{
+	display: none;
+}
+
+/*for tablet*/
+
+@media(max-width: 1048px){
+	nav ul{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#home{
+		background-image: none;
+		background-color: pink
+
+	}
+	.main{
+	left: 10%;
+	top: 50%;
+	transform: translate(-10%,-50%);
+}
+.p-b-container{
+	width:100%;
+}
+.p-box img{
+	width: 70%;
+	height: 70%;
+	
+	}
+.container {
+    width: 80%;
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 45px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 10px;
+  }
+  
+ 
+  .right {
+    left: 0%;
+  }
+.site-report{
+	height: auto;
+}
+.row{
+	flex-wrap:wrap; 
+}
+.box{
+	flex-grow:1; 
+}
+#image{
+flex-direction: column;
+align-items: center;
+}
+#image img{
+	width: 400px;
+	height:300px;
+}
+#describe h2{
+	text-align: center;
+	padding: 10px;
+}
+.gallery{
+flex-direction: column;
+align-items: center;
+}
+.gallery img{
+	width: 400px;
+	height:500px;
+}
+
+}
+/* for mobile phone*/
+@media(max-width: 480px){
+	
+	nav ul{
+		flex-wrap: wrap;
+		justify-content: center;
+		position: fixed;
+		top: 100px;
+		left: 100%;
+		width:100px;
+		height: 100%;
+		background:#111;
+	
+	}
+	nav ul li{
+		display: block;
+		font-size: 17px;
+		margin: 30px 0px;
+		color: #fff;
+	}
+	 nav ul li a{
+	 	border-bottom: 1px;
+	 	width: 100%;
+	 	height: 550px;
+	 	display: flex;
+	 	justify-content: center;
+	 	align-items: center;
+	 	margin:0px;
+	 	padding: 0px; 
+	 }
+	.checkbtn{
+		display: block;
+		color: #000;
+	}
+	#check:checked~ul li a {
+		left: 0;
+	}
+	#home{
+		background-size: 500px;
+	}
+	.main{
+	left: 5%;
+	top: 30%;
+	transform: translate(-5%,-30%);
+}
+.main p{
+	font-size: 20px;
+	text-align: center;
+}
+.main h1{
+	font-size: 15px;
+	text-align: center;
+
+}
+.main h2{
+	font-size: 10px;
+	color: black;
+	text-align:center; 
+}
+
+
+ .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 70%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+ 
+  .right {
+    left: 0%;
+  }
+
+.p-b-container{
+	grid-auto-columns:1fr 1fr;
+	grid-template-rows: auto;
+	
+}
+.p-box img{
+	width: 100%;
+	height: 100%;
+	}
+.input{
+	width: 80%;
+	
+}
+.message{
+	width: 70%;
+}
+#send{
+	width: 70%;
+}	
+
+.site-report{
+	height: auto;
+}
+.row{
+	flex-wrap:wrap; 
+}
+.box{
+	flex-grow:1; 
+}
+#image{
+flex-direction: column;
+align-items: center;
+}
+#image img{
+	width: 200px;
+	height: 300px;
+}
+#describe h2{
+	text-align: center;
+	padding: 10px;
+}
+.gallery{
+flex-direction: column;
+align-items: center;
+}
+.gallery img{
+	width: 200px;
+	height:300px;
+}
+}
+}
+
+	
